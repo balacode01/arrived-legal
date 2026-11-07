@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Arrived collects, uses, shares, stores and deletes your information.">
+  <meta name="theme-color" content="#1e3a8a">
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <title>Privacy Policy · Arrived</title>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img src="icon.png" alt="" width="40" height="40">
+    <a href="index.html">Arrived</a>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 7 November 2026</p>
+
+    <section class="summary" aria-labelledby="short">
+      <h2 id="short">In short</h2>
+      <ul>
+        <li>Arrived tells <strong>the people you choose</strong> when you reach a place you saved, for example "Bala has reached Home", with the time.</li>
+        <li>Your location is checked <strong>on your phone</strong>. Your location is never uploaded or shared. Only the places you save are sent to us.</li>
+        <li>We do not show ads, sell your data, or use analytics or tracking SDKs.</li>
+        <li>You can delete everything at any time, in the app.</li>
+      </ul>
+    </section>
+
+    <nav class="toc" aria-label="Contents">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#who">Who we are</a></li>
+        <li><a href="#collect">What we collect</a></li>
+        <li><a href="#use">Why we use it</a></li>
+        <li><a href="#others">What other people see</a></li>
+        <li><a href="#processors">Who handles the data</a></li>
+        <li><a href="#storage">Where data is stored</a></li>
+        <li><a href="#retention">How long we keep it</a></li>
+        <li><a href="#rights">Your rights and choices</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact and complaints</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="who">1. Who we are</h2>
+    <p>Arrived is an Android app published as "Arrived". It is run by the person who publishes it under the name "Arrived". For any question about your data, email <a href="mailto:bala.code01@gmail.com">bala.code01@gmail.com</a>.</p>
+
+    <h2 id="collect">2. What we collect</h2>
+    <p>The table lists what the app handles, why, and where it goes.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Information</th><th scope="col">Why</th><th scope="col">Where it goes</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Precise and background location</strong></td>
+            <td>To notice when you enter a place you saved.</td>
+            <td>Checked on your phone by Android geofencing. Your coordinates are not uploaded. Only the coordinates of places you save are sent to us.</td>
+          </tr>
+          <tr>
+            <td><strong>Places you save</strong>: name, map position, radius, address label, type</td>
+            <td>So arrivals can be detected and the right alert sent.</td>
+            <td>Our database (Supabase).</td>
+          </tr>
+          <tr>
+            <td><strong>Your private note on a place</strong></td>
+            <td>For you only.</td>
+            <td>Our database. Only you can read it.</td>
+          </tr>
+          <tr>
+            <td><strong>Display name</strong></td>
+            <td>Shown to the people who receive your alerts.</td>
+            <td>Our database.</td>
+          </tr>
+          <tr>
+            <td><strong>Nicknames you give others</strong></td>
+            <td>Used only in your own alerts.</td>
+            <td>Our database. Only you can read them.</td>
+          </tr>
+          <tr>
+            <td><strong>Arrival history</strong>: place, time, and whether the phone's location came from a mock (fake) location provider</td>
+            <td>To show history, apply the cooldown between alerts, and spot location spoofing.</td>
+            <td>Our database.</td>
+          </tr>
+          <tr>
+            <td><strong>Google sign-in</strong>: your Google account identifier and email address</td>
+            <td>To sign you in and keep your data separate from everyone else's.</td>
+            <td>Supabase Authentication, with Google sign-in. Your email is not shown to other people.</td>
+          </tr>
+          <tr>
+            <td><strong>Invite code</strong></td>
+            <td>So people can add you to their places.</td>
+            <td>Our database.</td>
+          </tr>
+          <tr>
+            <td><strong>Push notification token</strong></td>
+            <td>To deliver alerts to your phone.</td>
+            <td>Our database, and Google Firebase Cloud Messaging.</td>
+          </tr>
+          <tr>
+            <td><strong>Alert and quiet-hours settings</strong>, with your phone's time-zone offset</td>
+            <td>To apply quiet hours at the right local time.</td>
+            <td>Our database.</td>
+          </tr>
+          <tr>
+            <td><strong>Arrival credential</strong> (a secret that proves a phone is yours)</td>
+            <td>To make sure only your phone can report your arrivals.</td>
+            <td>Stored on your phone in encrypted storage, and on our server.</td>
+          </tr>
+          <tr>
+            <td><strong>Failed invite-code lookups</strong></td>
+            <td>To stop people guessing codes.</td>
+            <td>Our database. Counted per account, not per person.</td>
+          </tr>
+          <tr>
+            <td><strong>Server logs</strong></td>
+            <td>To find and fix problems.</td>
+            <td>Logs record identifiers and outcomes, not names, coordinates or tokens.</td>
+          </tr>
+          <tr>
+            <td><strong>Messages you send us</strong></td>
+            <td>To answer your question or request.</td>
+            <td>Your email inbox.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>We do not collect your contacts, photos, messages on your phone, advertising ID, or browsing history.</p>
+
+    <h2 id="use">3. Why we use it</h2>
+    <ul>
+      <li><strong>To run the service</strong>: detect arrivals, send alerts to the people you chose, and show your places and history.</li>
+      <li><strong>To keep your account safe</strong>: sign you in, separate your data from other people's, and stop code guessing and location spoofing.</li>
+      <li><strong>To fix problems</strong>: from server logs and error messages that contain no personal details.</li>
+      <li><strong>To answer you</strong>: when you email us.</li>
+    </ul>
+    <p>The legal basis is your consent. You give it when you accept these terms and the permissions the app asks for. You can withdraw it at any time by turning permissions off, removing places, or deleting your account. Withdrawing consent may mean the app can no longer send you alerts.</p>
+
+    <h2 id="others">4. What other people see</h2>
+    <p>The people you add to a place, once they accept, receive only a message such as "<em>your name</em> has reached <em>place name</em>", with the time. They never see your location, your route, or when you leave a place. They do not see your email address, your note, or your other places.</p>
+
+    <h2 id="processors">5. Who handles the data</h2>
+    <ul>
+      <li><strong>Supabase</strong>: our database, sign-in, and server functions.</li>
+      <li><strong>Google</strong>: sign-in with your Google account, and push notifications through Firebase Cloud Messaging.</li>
+      <li><strong>OpenStreetMap Foundation</strong> (map tiles, and place-name search through Nominatim): when you view a map or search for a place, these services receive the area you are viewing or your search text, along with your IP address.</li>
+      <li><strong>Google Play</strong>: distributes the app and may send crash or install information under its own policy.</li>
+    </ul>
+    <p>We do not use advertising networks, analytics services, or crash-reporting SDKs. If that changes, this page will be updated first. We do not sell your data.</p>
+
+    <h2 id="storage">6. Where data is stored</h2>
+    <p>Our database and server functions run on Supabase's cloud servers, which may be located outside India. The same protections described in this policy apply wherever the data is stored.</p>
+
+    <h2 id="retention">7. How long we keep it</h2>
+    <ul>
+      <li><strong>Your account and its data</strong>: kept until you delete your account. Arrival history is not deleted automatically.</li>
+      <li><strong>Deleted accounts</strong>: removed from our database when you delete the account (see <a href="delete-account.html">how to delete your account</a>).</li>
+      <li><strong>Backups and logs</strong>: may remain in our provider's backups and logs for a limited period, set by the provider, after deletion.</li>
+      <li><strong>Messages you send us</strong>: kept as long as needed to answer and resolve the matter.</li>
+    </ul>
+
+    <h2 id="rights">8. Your rights and choices</h2>
+    <p>In the app you can, at any time:</p>
+    <ul>
+      <li>turn off alerts you receive, or the confirmation note on your phone (Settings → Alerts);</li>
+      <li>set quiet hours (Settings → Alerts);</li>
+      <li>remove a person from a place, and they stop getting your alerts straight away;</li>
+      <li>revoke location or notification permission in Android settings. Arrival detection then stops;</li>
+      <li>delete your data and account (Settings → Delete my data).</li>
+    </ul>
+    <p>Under India's Digital Personal Data Protection Act, 2023, and similar laws, you may ask us to:</p>
+    <ul>
+      <li>tell you what personal data we hold about you;</li>
+      <li>correct inaccurate data;</li>
+      <li>erase your data;</li>
+      <li>withdraw your consent; and</li>
+      <li>raise a complaint about how we handle your data.</li>
+    </ul>
+    <p>Email <a href="mailto:bala.code01@gmail.com">bala.code01@gmail.com</a> from the address on your account. We will verify it and respond within 30 days.</p>
+
+    <h2 id="security">9. Security</h2>
+    <p>Data travels over HTTPS. Access to each row in our database is limited so that you can read only your own data and the data shared with you. The arrival credential and saved places are kept in encrypted storage on your phone. No system is perfectly secure, so please keep your phone locked and your Google account protected.</p>
+
+    <h2 id="children">10. Children</h2>
+    <p>Arrived is for people aged 18 and over. We do not knowingly collect data from anyone younger. If you believe a child has given us data, email us and we will delete it.</p>
+
+    <h2 id="changes">11. Changes to this policy</h2>
+    <p>We may update this policy. If a change matters, we will tell you in the app before it takes effect. The date at the top shows when the policy last changed.</p>
+
+    <h2 id="contact">12. Contact and complaints</h2>
+    <p>Questions, requests, or complaints: <a href="mailto:bala.code01@gmail.com">bala.code01@gmail.com</a>. This address is also our grievance contact. You can also read the <a href="terms.html">Terms of Use</a> and the <a href="delete-account.html">account deletion</a> page.</p>
+  </main>
+
+  <footer class="site">
+    <nav aria-label="Legal">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="delete-account.html">Delete account</a>
+    </nav>
+    <p>Contact: <a href="mailto:bala.code01@gmail.com">bala.code01@gmail.com</a></p>
+  </footer>
+</div>
+</body>
+</html>

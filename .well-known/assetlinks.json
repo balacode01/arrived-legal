@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.locateapp.locate_app",
+      "sha256_cert_fingerprints": [
+        "2D:96:65:37:09:59:F0:CC:E7:58:99:FD:3F:A3:0B:61:CB:2D:E1:83:D9:19:37:90:36:33:26:AE:C2:DC:93:F9"
+      ]
+    }
+  }
+]

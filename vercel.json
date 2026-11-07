@@ -1,7 +1,7 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/join/:token", "destination": "/api/join?token=:token" }
+    { "source": "/join/:token", "destination": "/api/join/:token" }
   ],
   "headers": [
     {
